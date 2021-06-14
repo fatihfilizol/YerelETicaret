@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="CustomerNavBar.master.cs" Inherits="Proje.Web.CustomerNavBar" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+        .navbar-nav.navbar-center {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            background-color:#f7a440
+        }
+
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-default" style="background-color:#e1701a" role="navigation">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-left">
+                <li>Toptan Market</li>
+            </ul>
+            <ul class="nav navbar-nav navbar-center">
+                <li><a href="/CustomerPendingOrders.aspx">Siparişler</a></li>
+                <li><a href="/CustomerAddOrder.aspx">Sipariş Ver</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <asp:HyperLink NavigateUrl="CustomerToCompany.aspx" ID="HyperLink1" runat="server">Firma Profiline Geç</asp:HyperLink>
+                </li>
+                <li>
+                    <asp:HyperLink NavigateUrl="Exit.aspx" ID="HyperLink2" runat="server">Çıkış</asp:HyperLink></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

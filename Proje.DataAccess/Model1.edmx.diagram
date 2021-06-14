@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b2a4bef58da740dcb3f3c88642aab8f9" Name="Diagram1">
+        <EntityTypeShape EntityType="YerelETicaretDBModel.Category" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="YerelETicaretDBModel.Companies" Width="1.5" PointX="3" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="YerelETicaretDBModel.Customer" Width="1.5" PointX="5.25" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="YerelETicaretDBModel.Orders" Width="1.5" PointX="7.5" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="YerelETicaretDBModel.Product" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="YerelETicaretDBModel.Rank" Width="1.5" PointX="0.75" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="YerelETicaretDBModel.Status" Width="1.5" PointX="5.25" PointY="8.625" IsExpanded="true" />
+        <AssociationConnector Association="YerelETicaretDBModel.FK_Product_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="YerelETicaretDBModel.FK_Company_Rank" ManuallyRouted="false" />
+        <AssociationConnector Association="YerelETicaretDBModel.FK_Customer_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="YerelETicaretDBModel.FK_Customer_Company1" ManuallyRouted="false" />
+        <AssociationConnector Association="YerelETicaretDBModel.FK_Product_Company" ManuallyRouted="false" />
+        <AssociationConnector Association="YerelETicaretDBModel.FK_Orders_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="YerelETicaretDBModel.FK_Orders_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="YerelETicaretDBModel.FK_Orders_Status" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
